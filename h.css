@@ -1,0 +1,524 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    border: border-box;
+}
+
+body{
+    background-color: #fdc5c4;
+    display: flex;
+    flex-wrap: wrap;
+}
+.layout{
+    display: flex;
+    
+}
+.main{
+    margin-left: 290px;
+    margin-top: 190px;
+}
+
+.first p{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: black;
+
+}
+
+.secound p{
+    color: red;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.third p{
+    font-size: 30px;
+    font-weight: 300;
+    color: black;
+   
+}
+
+.bu{
+    text-align: center;
+}
+
+button{
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow:0 10px 25px rgb(249,6,6,1);
+    width: auto;
+    
+}
+
+button.active, button:hover {
+    color: #fff;
+    box-shadow: 0 4px 10px rgb(16, 0, 0);
+    transform: translateY(-5px) scale(1.03);
+
+
+ }
+
+
+.hero-image{
+    
+}
+
+img{
+    display: flex;
+    height: 36.5rem;
+    width: 20rem;
+    perspective: 500px;
+}
+
+.from-card{
+    width: 95%;
+
+    max-width: 1400px;
+
+    margin: 30px auto;
+
+    background: white;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 50px rgba(0, 0, 0, 0.12);
+}
+
+.input i{
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 3px;
+    border-right: 2px solid #d5dce8;
+    font-size: 17px;
+    width: 30px;
+    
+}
+
+.input input{
+    width: 300px;
+    padding-left: 40px;
+    height: 46.5px;
+    align-items: center;
+    border: 1px solid#d5dce8;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.95);
+    transition: o.3s;
+    overflow: hidden;  
+}
+
+.input select{
+    width: 345px;
+    padding-left: 40px;
+    height: 49px;
+    color: rgb(83, 80, 80);
+    align-items: center;
+    border: 1px solid#d5dce8;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.95);
+    transition: o.3s;
+    overflow: hidden;
+
+}
+
+.input input:hover{
+    border-color: red;
+    /* transform: translateY(-2px); */
+    box-shadow:
+        0 5px 15px rgba(249, 6, 6, 0.12);
+}
+
+.input select:hover{
+    border-color: red;
+    /* transform: translateY(-2px); */
+    box-shadow:
+        0 5px 15px rgba(249, 6, 6, 0.12);
+}
+
+
+
+header{
+    background-color: rgb(241, 10, 10);
+    background-image:url(8da91ff6-75ad-4f3a-9706-433878b0a2c3.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 51%;
+    height: 160px;
+    align-items: center;
+}
+
+header i{
+    font-size: 40px;
+    margin-top: 50px;
+    margin-left: 20px;
+    
+}
+
+header p{
+    display: flex;
+    margin-left: 90px;
+}
+
+h1{
+    margin-bottom: 4px;
+    color: white;
+}
+
+p{
+    font-weight: 700;
+    color: white;
+    margin-left: 70px;
+}
+
+.info h2{
+    margin-top: 10px;
+    color: #172554;
+    
+}
+
+.info{
+    height: 50px;
+    margin-top: 30px;
+    border-bottom:2px solid red;
+}
+
+.input{
+    height: 457px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-evenly;
+    margin-left: 30px;
+    margin-top: 20px;
+    background-image: url("Gemini_Generated_Image_qnlk1eqnlk1eqnlk.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35%;
+}
+
+label{
+    font-size: 15px;
+    font-weight: 580;
+    color:#172554
+}
+
+.sr{
+    display: flex;
+    
+}
+
+.submit-section button{
+    width: auto;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-left: 21rem;
+    margin-bottom: 2rem;
+    
+}
+
+
+.reset button{
+    background-color: white;
+    color: rgb(241, 10, 10);
+    width: 225px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1rem;
+    display: flex;
+    margin-left: 2rem;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.reset-btn:hover {
+    color: red;
+    border-color: red;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(249, 6, 6, 0.3);
+}
+
+
+
+/* =========================================
+   MOBILE VIEW - ADD THIS AT END OF CSS
+========================================= */
+
+@media (max-width: 768px) {
+
+    /* Body */
+    body {
+        display: block;
+        padding: 10px;
+        overflow-x: hidden;
+    }
+
+    /* First page layout */
+    .layout {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main {
+        margin: 60px 20px 20px;
+        text-align: center;
+    }
+
+    .first p {
+        font-size: 36px;
+        margin-left: 0;
+    }
+
+    .secound p {
+        font-size: 36px;
+        margin-left: 0;
+    }
+
+    .third p {
+        font-size: 20px;
+        margin-left: 0;
+        line-height: 1.5;
+    }
+
+    /* Hero image */
+    .hero-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        max-height: 350px;
+        object-fit: contain;
+    }
+
+    /* Form card */
+    .from-card {
+        width: 100%;
+        margin: 20px auto;
+        border-radius: 15px;
+    }
+
+    /* Header */
+    header {
+        height: 130px;
+        padding: 15px;
+        background-size: 45%;
+        background-position: right center;
+    }
+
+    header i {
+        font-size: 30px;
+        margin-top: 15px;
+        margin-left: 0;
+    }
+
+    header p {
+        margin-left: 10px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    /* Information title */
+    .info {
+        height: auto;
+        min-height: 50px;
+        margin: 20px 15px 0;
+        padding-bottom: 10px;
+    }
+
+    .info h2 {
+        font-size: 22px;
+    }
+
+    /* Input section */
+    .input {
+        height: auto;
+        min-height: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin: 20px 15px;
+        padding-bottom: 20px;
+        background-size: 50%;
+    }
+
+    /* Input boxes */
+    .input input {
+        width: 100%;
+        max-width: 100%;
+        height: 48px;
+        box-sizing: border-box;
+    }
+
+    .input select {
+        width: 100%;
+        max-width: 100%;
+        height: 49px;
+        box-sizing: border-box;
+    }
+
+    /* Labels */
+    label {
+        font-size: 14px;
+    }
+
+    /* Submit button */
+    .submit-section {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .submit-section button {
+        width: 90%;
+        height: 50px;
+        margin: 10px auto 20px;
+    }
+
+    /* Reset button */
+    .reset {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .reset button {
+        width: 90%;
+        height: 50px;
+        margin: 0 auto 20px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE - 480px
+========================================= */
+
+@media (max-width: 480px) {
+
+    .main {
+        margin: 40px 10px 15px;
+    }
+
+    .first p,
+    .secound p {
+        font-size: 30px;
+    }
+
+    .third p {
+        font-size: 18px;
+    }
+
+    .hero-image img {
+        max-width: 230px;
+        max-height: 280px;
+    }
+
+    header {
+        height: 110px;
+        padding: 10px;
+        background-size: 40%;
+    }
+
+    header i {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
+    header p {
+        margin-left: 5px;
+    }
+
+    header h1 {
+        font-size: 21px;
+    }
+
+    .info {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .info h2 {
+        font-size: 20px;
+    }
+
+    .input {
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 15px;
+        background-size: 60%;
+    }
+
+    .input input,
+    .input select {
+        width: 100%;
+    }
+
+    .submit-section button,
+    .reset button {
+        width: 95%;
+    }
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1000; 
+  left: 0; top: 0; 
+  width: 100%; height: 100%; 
+  background-color: rgba(0,0,0,0.6); 
+  backdrop-filter: blur(5px);
+  justify-content: center; 
+  align-items: center;
+}
+
+/* Dynamic Content Box */
+.modal-content {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  animation: popIn 0.3s ease-out forwards;
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.7); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Dynamic Colors */
+.modal-content.high-risk { border-top: 8px solid #e74c3c; }
+.modal-content.low-risk { border-top: 8px solid #2ecc71; }
+
+.close-btn {
+  margin-top: 20px;
+  padding: 10px 24px;
+  border: none;
+  background: #333;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
